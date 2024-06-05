@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "dev": "tsnd src/index.ts",
+    "build": "tsc"
+  },
+  "description": "",
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.5"
+  }
+}
