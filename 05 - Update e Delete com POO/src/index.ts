@@ -115,14 +115,7 @@ const recipeB = recipeInstance.create({
   content: "Conteudo receita B",
 });
 
-// const recipeB = recipeInstance.create({
-//   title: "Receita B",
-//   content: "Conteudo receita B",
-// });
-
-// ESPERAR 1 SEGUNDO ANTES DE EXECUTAR O RESTO
-
-// Update
+// UPDATE
 // Caso 1 - Receita existe - atualizando somente o title
 // const dataOnlyTitle = { title: "Receita B Atualizada Parcialmente" };
 // const updatedRecipe = recipeInstance.update(2, dataOnlyTitle);
@@ -139,21 +132,22 @@ const recipeB = recipeInstance.create({
 // const updatedRecipe = recipeInstance.update(2, data);
 
 // Caso 4 - Id de receita que não existe
-setTimeout(() => "aguardando...", 3000);
 const dataOnlyTitle = { title: "Receita B Atualizada Parcialmente" };
 const updatedRecipe = recipeInstance.update(10000, dataOnlyTitle);
 
 console.log("\nUpdate de Receita:");
 console.log(updatedRecipe);
 
-// console.log("\nDelete de Receita:");
+// DELETE
 // Caso 1 - Receita existe
 // const deletedRecipe = recipeInstance.delete(2);
-// console.log(deletedRecipe);
 
 // Caso 2 - Receita não existe
 // const deletedRecipe = recipeInstance.delete(200);
+
+// console.log("\nDelete de Receita:");
 // console.log(deletedRecipe);
 
+// READ
 console.log("\nDatabase de Receitas:");
 console.log(recipeInstance.read());
